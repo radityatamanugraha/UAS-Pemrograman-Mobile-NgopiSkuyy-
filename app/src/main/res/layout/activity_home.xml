@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8B4513"
+    android:padding="16dp"
+    tools:context=".HomeActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvCoffeeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Americano"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Coffee Image -->
+    <ImageView
+        android:id="@+id/coffee"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/kopiamericano"
+        android:layout_gravity="center"
+        android:contentDescription="Coffee image"
+        android:layout_marginVertical="16dp"/>
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter username"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email"
+        android:padding="12dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="8dp"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Address -->
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter address"
+        android:padding="12dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:padding="12dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"
+        android:inputType="phone"/>
+
+    <!-- Quantity Selector -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash or delivery:"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp10.000"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buyNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFA500"
+        android:padding="8dp"
+        android:text="Buy Now"
+        android:textColor="@android:color/white" />
+</LinearLayout>
